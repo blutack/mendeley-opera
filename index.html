@@ -8,9 +8,11 @@
           title: "Import into Mendeley",
           icon: "mlogo.png",
 		  onclick: function(){
-			document.getElementsByTagName('body')[0].appendChild(document.createElement('script')).setAttribute('src','http://www.mendeley.com/minified/bookmarklet.js');
-			}
-        }
+			var tab = opera.extension.tabs.getSelected();
+			if (!!tab.port)
+				tab.postMessage("load-mendeley");
+		  }
+		}
         theButton = opera.contexts.toolbar.createItem(ToolbarUIItemProperties);
         opera.contexts.toolbar.addItem(theButton);
       }, false);
