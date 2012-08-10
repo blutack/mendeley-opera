@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" id="http://github.com/blutack/mendeley-opera" version="1.0">
+  <name>Mendeley Opera Importer</name>
+
+  <author href="http://github.com/blutack/mendeley-opera">blutack</author>
+  <description>Handy button to launch the Mendeley web importer</description>
+  <icon src="mlogo.png"/>
+
+  <access origin="http://mendeley.com/" subdomains="true"/>
+  <access origin="http://cloudfront.net/" subdomains="true"/>
+</widget>
